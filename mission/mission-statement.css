@@ -4,12 +4,32 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+select {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 h2 {
     color: #006EB6;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+}
+
+body.dark h2 {
+    color: #66b3ff;
+    border-bottom-color: #555;
 }
 
 #italic-text {
@@ -28,4 +48,8 @@ ol li {
 footer img {
     width: 200px;
     height: auto;
+}
+
+body.dark footer img {
+    filter: invert(1) brightness(2);
 }
