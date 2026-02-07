@@ -13,9 +13,12 @@ function openModal(e) {
     const src = img.getAttribute('src');
     const alt = img.getAttribute('alt');
     const full = src.replace('sm', 'full');
-    
+
 // Code to show modal  - Use event parameter 'e'   
-    
+    modalImage.src = full;
+    modalImage.alt = alt;
+
+    modal.showModal();
 }
 // Close modal on button click
 closeButton.addEventListener('click', () => {
