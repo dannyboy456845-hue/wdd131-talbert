@@ -73,7 +73,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .menu-btn {
-        display: none;
+        display: grid;
     }
     nav a {
         display: inline;
