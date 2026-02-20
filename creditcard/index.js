@@ -1,15 +1,5 @@
-const cvcInput = document.getElementById('cvc');
-const cvvInput = document.getElementById('cvv');
 const cardForm = document.getElementById('cardForm');
 const errorMessage = document.getElementById('error-message');
-
-cvcInput.addEventListener('input', (e) => {
-    cvvInput.value = e.target.value;
-});
-
-cvvInput.addEventListener('input', (e) => {
-    cvcInput.value = e.target.value;
-});
 
 const cardNumberInput = document.getElementById('cardNumber');
 cardNumberInput.addEventListener('input', (e) => {
