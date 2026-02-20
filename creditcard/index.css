@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-container {
+    position: relative;
+    width: 500px;
+    height: 350px;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-back {
+    background: #d3d3d3;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 20px;
+    z-index: 1;
+}
+
+.card-front {
+    background: #d3d3d3;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 8px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.card-emoji {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+form {
+    display: grid;
+    gap: 8px;
+    max-width: 100%;
+}
+
+.form-group {
+    display: grid;
+    gap: 3px;
+    max-width: 100%;
+}
+
+.form-group label,
+#cardExpiration label {
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+.form-group input,
+#cardExpiration input {
+    background: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #333;
+    font-size: 0.85em;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-group input::placeholder,
+#cardExpiration input::placeholder {
+    color: #999;
+}
+
+.form-group input:focus,
+#cardExpiration input:focus {
+    background: white;
+    border-color: #555;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#cardExpiration {
+    display: grid;
+    gap: 3px;
+}
+
+.expiration-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.magnetic-strip {
+    background: #000;
+    height: 40px;
+    width: 100%;
+}
+
+.cvv-section {
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: grid;
+    gap: 5px;
+    border: 1px solid #999;
+    width: 80px;
+    align-self: end;
+}
+
+.cvv-section label {
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.cvv-section input {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    color: #333;
+    font-size: 0.85em;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cvv-section input:focus {
+    border-color: #667eea;
+}
