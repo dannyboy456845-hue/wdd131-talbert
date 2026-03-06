@@ -1,0 +1,208 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	color: #1a1a1a;
+}
+
+.page {
+	max-width: 980px;
+	margin: 32px auto;
+	padding: 0 20px;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 14px;
+}
+
+.recipe-book-logo {
+	width: 72px;
+	height: auto;
+	display: block;
+}
+
+.brand-title {
+	margin: 0;
+	font-size: 40px;
+	font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+.search-wrap {
+	margin-bottom: 20px;
+}
+
+.search-bar {
+	display: flex;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	overflow: hidden;
+	max-width: 420px;
+}
+
+.search-bar input {
+	flex: 1;
+	border: 0;
+	font-size: 16px;
+	padding: 12px;
+}
+
+.search-bar input:focus {
+	outline: none;
+}
+
+.search-bar button {
+	border: 0;
+	background: #f3f3f3;
+	padding: 0 14px;
+	cursor: pointer;
+}
+
+.search-bar button img {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.recipe-card {
+	border: 1px solid #d4d4d4;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	background: #fff;
+	margin-bottom: 14px;
+}
+
+.recipe-image {
+	width: 360px;
+	object-fit: cover;
+	display: block;
+}
+
+.recipe-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tag {
+	margin: 0;
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+h1 {
+	margin: 8px 0;
+	font-size: 34px;
+}
+
+.rating {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.description {
+	margin: 0;
+	line-height: 1.45;
+	max-width: 46ch;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-footer a {
+	color: #1a1a1a;
+}
+
+.social {
+	display: flex;
+	gap: 12px;
+}
+
+.social img {
+	width: 26px;
+	height: 26px;
+	display: block;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+@media (max-width: 700px) {
+	.page {
+		margin: 20px auto;
+		padding: 0 14px;
+	}
+
+	.brand-title {
+		font-size: 34px;
+	}
+
+	.search-bar {
+		max-width: 100%;
+	}
+
+	.recipe-card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.recipe-image {
+		width: 100%;
+		height: auto;
+	}
+
+	.recipe-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.recipe-content .rating {
+		order: 1;
+	}
+
+	.recipe-content h1 {
+		order: 2;
+	}
+
+	.recipe-content .tag {
+		order: 3;
+	}
+
+	.recipe-content .description {
+		order: 4;
+	}
+
+	.card-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.social {
+		order: 1;
+	}
+
+	.card-footer a {
+		order: 2;
+	}
+}
