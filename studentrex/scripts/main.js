@@ -63,8 +63,8 @@ const activities = [
         difficulty: "Easy–Moderate",
         cost: "$5 parking",
         experience: "hidden",
-        image: "https://images.unsplash.com/photo-1432405972618-c6b0cfba8b47?w=600&h=400&fit=crop",
-        alt: "A large waterfall cascading over rocks"
+        image: "https://images.unsplash.com/photo-1546182208-1f9571f48383?w=600&h=400&fit=crop",
+        alt: "A powerful waterfall surrounded by green forest"
     },
     {
         name: "Yellowstone National Park",
@@ -73,8 +73,8 @@ const activities = [
         difficulty: "Moderate",
         cost: "~$35/vehicle",
         experience: "any",
-        image: "https://images.unsplash.com/photo-1533953263568-bcc28e6b8d94?w=600&h=400&fit=crop",
-        alt: "Steam rising from a Yellowstone hot spring"
+        image: "https://images.unsplash.com/photo-1570030287043-2bce05627868?w=600&h=400&fit=crop",
+        alt: "Colorful Grand Prismatic Spring at Yellowstone"
     },
     {
         name: "Rexburg Rapids",
@@ -83,8 +83,8 @@ const activities = [
         difficulty: "Easy",
         cost: "$5–$8",
         experience: "new",
-        image: "https://images.unsplash.com/photo-1517737812785-f4fa0cee4cc3?w=600&h=400&fit=crop",
-        alt: "Outdoor swimming pool on a sunny day"
+        image: "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&h=400&fit=crop",
+        alt: "Water slides at an outdoor water park"
     }
 ];
 
