@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse and filter fun activities in Rexburg — hiking, adventure, nightlife, and chill spots for BYU-I students." />
+    <title>StudentRex | Activities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="header-content">
+            <img src="student_rex.jpg" alt="StudentRex logo" class="logo" width="80" height="80" />
+            <h1>StudentRex</h1>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="studentrex.html" class="active">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Filter controls -->
+        <section class="filters">
+            <h2>Find Your Next Adventure</h2>
+            <p>Filter by category to find activities that match your vibe.</p>
+
+            <div class="filter-buttons" role="group" aria-label="Filter activities by category">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hiking">Hiking</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="nightlife">Nightlife</button>
+                <button class="filter-btn" data-filter="chill">Chill</button>
+            </div>
+
+            <!-- Results count updates dynamically -->
+            <p class="results-count" aria-live="polite"></p>
+        </section>
+
+        <!-- Activity cards rendered by JavaScript -->
+        <section class="activities-grid" id="activities-grid">
+            <!-- Cards are injected here by main.js -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentRex | Daniel Talbert | WDD 131</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
